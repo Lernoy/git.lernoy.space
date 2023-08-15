@@ -8,7 +8,7 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    pageCheck($row["Tables_in_j6531130_cms"]);
+    pageCheck($row["Tables_in_j6531130_cms"])
   }
 }
 if($_SERVER["REQUEST_URI"]=="/") require($_SERVER["DOCUMENT_ROOT"]."/index.php");
