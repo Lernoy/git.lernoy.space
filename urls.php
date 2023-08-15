@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
 }
 if($_SERVER["REQUEST_URI"]=="/") require($_SERVER["DOCUMENT_ROOT"]."/index.php");
 
-a
+
 function pageCheck($pageCode){
     if (str_contains($_SERVER["REQUEST_URI"], $pageCode) !== false) {
         if ($_SERVER["REQUEST_URI"] != "/".$pageCode."/")
