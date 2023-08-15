@@ -21,5 +21,5 @@ function pageCheck($pageCode){
         else
             include($_SERVER['DOCUMENT_ROOT'] . "/".$pageCode."/index.php");
     }
-}
+}a
 ?>
