@@ -18,9 +18,11 @@ $(function () {
             type: "post",
             url: "/ajax/add_page_ajax.php",
             data: $(this).serialize(),
-            dataType: "dataType",
-            success: function (response) {
-                console.log("A");
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                $("form#create_page input[name='ID']").attr("value", data);
+                $("form#create_page").trigger('reset');
             }
         });
     })
